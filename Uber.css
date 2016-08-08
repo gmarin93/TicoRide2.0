@@ -1,0 +1,224 @@
+body{
+
+background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); 
+
+}
+
+#cabecera {
+	background: #000000;
+	color: white;
+	height: 134px;
+}
+
+#logo-Uber {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+	width: 120px;
+}
+
+.Bienvenida {
+	float: left;
+	padding: 103px 0 0 179px;
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: blue;}
+    100% {color: black;}
+}
+
+.section {
+    background-color:  rgb(225, 212, 212);
+    position: absolute;
+    top: 166px;
+    width: 1333px;
+    height: 730px;
+}
+
+.Form {
+    background-color:  rgb(225, 212, 212);
+    position: relative;
+    top: 197px;
+    width: 1135px;
+    height: 525px;
+
+}
+
+fieldset{
+
+	 border-style: groove;
+}
+.button5 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 71%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.label {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-right: 3px;
+}
+.button1 {
+    margin-right: 27px;
+	background-image:url(mapa.jpg);
+	color: transparent;
+}
+input{
+
+	 
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+input:focus {
+    border: 3px solid #555;
+}
+
+
+nav {
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+    .menudropdrawn-content{
+
+        display:none;
+        position: absolute;
+        background-color: transparent;
+        background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+        background: -moz-linear-gradient(top,#efefef 0%, #bbbbbb 100%);
+        box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+        border-radius: 10px;
+
+      
+    }
+    .menu ul:after{
+        content: "";clear:both,display:block;
+    }
+
+    .menudropdrawn-content a{
+
+        color: black;
+    
+        text-decoration: none;
+        display: none;
+        width:400px;
+        
+        margin-left: -11px;
+        margin-top: 10px;border: 1px solid #fff;
+        -webkit-box-shadow:0px 13px 25px rgba(0,0,0,0.2);
+        -moz-box-shadow:0px 13px 25px rgba(0,0,0,0.2);
+        -box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+        float: none;
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 0;
+            padding: 81px 30px;
+    }
+
+
+    .menudropdrawn-content a:hover{
+        background-color: #f1f1f1;
+         transition: 300ms all ease;
+
+    }
+    .menudropdrawn:hover .menudropdrawn-content{
+        display: flex;
+    }
+
+	nav ul {
+		    
+        padding-right: 93px;
+		list-style-type: none;
+   		
+    	background-color: #000000;
+
+	}
+	
+		nav ul li {
+			
+			line-height: 73px;
+			float: right;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 31px 10px;
+				text-decoration: none;
+				
+				font-size: 20px;
+				margin-bottom: 0;
+      			border-radius: 0;
+      			
+      			color: gray;
+    			transition: 300ms all ease;
+                    
+
+
+
+
+			}
+
+			li a:hover {
+             background-color: rgba(0,0,0,.20);
+        	 color: rgba(255,255,255,1);
+
+			}
+
+/* general styles */
+
+}
+
+

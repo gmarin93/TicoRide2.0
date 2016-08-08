@@ -1,0 +1,102 @@
+
+* {
+box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+body{
+
+background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); 
+
+}
+
+#cabecera {
+	background: #000000;
+	color: red;
+	height: 115px;
+}
+
+#logo-Uber {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+	width: 120px;
+}
+
+.login {
+    margin: 109px 238px;
+    width: 808px;
+    position: absolute;
+
+}
+.login-screen {
+background-color:#050505;
+padding: 20px;
+border-radius: 5px
+}
+
+.app-title {
+text-align: left;
+color: #f3efef;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 416px;
+    transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+
+.btn {
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 25px;
+    padding: 26px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 26px 257px;
+}
+}
+
+.btn:hover {
+  background-color: #2980B9;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #f6f4f4;
+  display: block;
+	margin-top: 12px;
+}
