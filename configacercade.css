@@ -1,15 +1,19 @@
+
 .Bienvenida {
-    text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
+
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 113%;
-    right: 28%;
 }
+.parrafo{
+
+  font-size: 20px;
+}
+
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
@@ -43,7 +47,6 @@ h5{
 }
 input{
   border-radius: 4px;
-	color:black;
 
 }
 .container {
@@ -70,10 +73,9 @@ input{
   }
 
 .carousel-caption {
-      right: 26%;
-      left:9%;
-      padding-bottom:0%;
-      position:fixed;
+  right: 3%;
+  left: 9%;
+  position: fixed;
     }
 
   @media (max-width: 600px) {
@@ -123,9 +125,9 @@ input{
 
   }
 .btn:hover, .btn:focus {
-    /*  border: 1px solid #333;*/
+      border: 1px solid #333;
       background-color: #2d2d30;
-      color: white;
+      color: black;
   }
 .modal-header, h4, .close {
       background-color: #333;
@@ -159,7 +161,6 @@ input{
 .navbar-nav li a:hover {
       color: white !important;
   }
-
 .navbar-nav li.active a {
       color: lightgreen !important;
       background-color: #29292c !important;
@@ -169,22 +170,11 @@ input{
   }
 .open .dropdown-toggle {
       color: black;
-      background-color: #2d2d30 !important;
+      background-color: white !important;
   }
 .dropdown-menu li a {
       color:black;
   }
 .dropdown-menu li a:hover {
-      background-color: #2d2d30;
+      background-color: white;
   }
-
-	.dropdown-menu{
-		background-color: #2d2d30;
-		opacity: 1.9;
-	}
-	.carousel-caption form {
-    position: absolute;
-    right: -12%;
-    left: 16%;
-    bottom: 100%;
-}

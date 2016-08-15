@@ -1,106 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Configuracion Uber</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Configuracion-TicoRide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="configuracion-config.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 
-	<link href="Config.css" rel="stylesheet" type="text/css">
-</head>
-<body id="cuerpo">
+  </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<header id="cabecera">
-	
-<section>
-	   <div >
-	   	<img id="logo-Uber" src="uber-logo.png">
-	   </div>
-
-</section>
-
-</header>
-
-<section class="section">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
 
-  <ul>
-  <li><a class="active" href="Menu Principal.html">Principal</a></li>
-  <li class="dropdown">
-  <a class="dropbtn" href="#news">Rides</a>
+        <img src="log.png">
+        <h5>Tico-Rides</h5>
 
-  <div class="dropdown-content">
-      <a href="AgregarRide-Uber.html">Agregar</a>
-      <a href="Editarride-Uber.html">Editar</a>
-      
     </div>
-    </li>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
 
-  <li><a href="Configuracion.html">Settings</a></li>
-  </ul>
+        <li><a href="Perfil.html">Perfil</a></li>
 
-<div class="log">
-  
-  <div class="welcome">
-      <h3>Welcome</h3>  
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <a href="AgregarRide-Uber.html">Agregar</a>
+            <br></br>
+            <a href="Editarride-Uber.html">Editar</a>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-  
-  <div class="user">
-      <h2>gmarin93</h2>  
-  </div>
-  
+</nav>
 
-  <section>
-     <div class="foto-user">
-      <img id="logo-Uber" src="uber-user.png">
-     </div>
 
-</section>
-  
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="body3.jpg" alt="New York" width="1200" height="700">
+
+      </div>
+
+      <div class="item">
+        <img src="zarcero.jpg" alt="New York" width="1200" height="700">
+
+      </div>
+
+      <div class="item">
+        <img src="body.png" alt="Aereopuerto Juan SantaMaria" width="1200" height="700">
+
+      </div>
+
+      <div class="item">
+        <img src="body4.jpg" alt="City mall" width="1200" height="700">
+
+      </div>
+
+      <div class="item">
+        <img src="body2.jpg" alt="Los Angeles" width="900" height="600">
+
+      </div>
+
+      <div class="carousel-caption">
+
+            <h2>gmarin93</h2>
+
+        <section>
+
+            <img id="logo-Uber" src="uber-user.png">
+
+
+            <div class="nombre">
+
+               <label for="driver-name">Nombre:</label>
+               <br></br>
+               <input type=" text" name="driver-name" value="" placeholder="km/h"> <br/>
+               <br></br>
+
+               <div class="velocidad">
+
+                  <label for="driver-name">Velocidad:</label>
+                  <br></br>
+                  <input type=" text" name="driver-name" value="" placeholder="Glenn Marin"> <br/>
+                  <br></br>
+
+               </div>
+               <div class="acerca">
+
+                <label for="address">Acerca de mi:</label>
+                <br></br>
+                 <textarea name="address" rows="4" cols="25"></textarea>
+                 <br><br/>
+               </div>
+
+               <div class="guardar">
+                     <button class="btn" type="button" name="button">Guardar</button>
+                   </div>
+                       <div class="cancelar">
+                     <button class="btn" type="button" name="button">Cancelar</button>
+                   </div>
+
+
+            </div>
+
+      </section>
+
+
+    </div>
+
 
 </div>
 
-<div class="Bienvenida">
-	<h1>Configuracion</h1>	
-</div>	
-<div class="fieldset">
-	
-	<fieldset>
-     
-     <div class="nombre">
-          
-        <label for="driver-name">Nombre:</label>
-        <br></br>
-        <input type=" text" name="driver-name" value="" placeholder="Glenn Marin"> <br/> 
-        <br></br>
 
-     </div>
+<!-- Con
+<div id="googleMap"></div>
 
-      <div class="velocidad">
-          
-        <label for="driver-name">Velocidad:</label>
-        <br></br>
-        <input type=" text" name="driver-name" value="" placeholder="km/h"> <br/>
-    
-     </div>
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
 
-      <div class="acerca">
-          
-       <label for="address">Acerca de mi:</label>
-       <br></br>
-        <textarea name="address" rows="4" cols="25"></textarea>
-        <br/>
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
 
-    <div class="buttonMapa1">
-          <button  type="button" name="button">Guardar</button>  
-        </div>
-            <div class="buttonMapa2">
-          <button  type="button" name="button">Cancelar</button>  
-        </div>
-    
-    </fieldset>
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
+var marker = new google.maps.Marker({
+position:myCenter,
+});
 
-</div>
+marker.setMap(map);
+}
 
-</section>
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to schtroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
 
 </body>
 </html>

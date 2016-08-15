@@ -1,14 +1,22 @@
 .Bienvenida {
-    text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
+
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+
+}
+
+.table {
+    width: 128%;
+    max-width: 133%;
+    margin-bottom: 20px;
     position: absolute;
-    bottom: 113%;
-    right: 28%;
+    left: 2%;
+    top: -60%;
 }
 
 /* Chrome, Safari, Opera */
@@ -27,8 +35,6 @@
     100% {color: black;}
 }
 
-
-
 img{
 
   margin-right:80%;
@@ -43,7 +49,6 @@ h5{
 }
 input{
   border-radius: 4px;
-	color:black;
 
 }
 .container {
@@ -67,7 +72,28 @@ input{
 }
 .carousel-caption h3 {
       color: #fff !important;
+			font-size: 51px;
+    	position: absolute;
+    	left: 53%;
+    	top: -184%;
   }
+
+
+	.carousel-caption img {
+			width: 7%;
+	    position: absolute;
+	    left: 1%;
+	    top: -133%;
+	}
+
+
+.carousel-caption h2 {
+    width: 49%;
+    font-size: 150%;
+    position: absolute;
+    left: -10%;
+    top: -133%;
+}
 
 .carousel-caption {
       right: 26%;
@@ -123,9 +149,9 @@ input{
 
   }
 .btn:hover, .btn:focus {
-    /*  border: 1px solid #333;*/
+      border: 1px solid #333;
       background-color: #2d2d30;
-      color: white;
+      color: black;
   }
 .modal-header, h4, .close {
       background-color: #333;
@@ -151,7 +177,7 @@ input{
       border: 0;
       font-size: 16px !important;
       letter-spacing: 4px;
-      opacity: 0.9;
+      opacity: 1.1;
   }
 .navbar li a, .navbar .navbar-brand {
       color: lightgreen !important;
@@ -159,32 +185,40 @@ input{
 .navbar-nav li a:hover {
       color: white !important;
   }
-
 .navbar-nav li.active a {
-      color: lightgreen !important;
-      background-color: #29292c !important;
+      color: red !important;
+      background-color: blue !important;
   }
-.navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-.open .dropdown-toggle {
-      color: black;
-      background-color: #2d2d30 !important;
-  }
-.dropdown-menu li a {
-      color:black;
-  }
-.dropdown-menu li a:hover {
-      background-color: #2d2d30;
-  }
+  .navbar li a, .navbar .navbar-brand {
+        color: lightgreen !important;
+    }
+  .navbar-nav li a:hover {
+        color: white;
+        background-color: #2d2d30 !important;
+    }
 
-	.dropdown-menu{
-		background-color: #2d2d30;
-		opacity: 1.9;
-	}
-	.carousel-caption form {
-    position: absolute;
-    right: -12%;
-    left: 16%;
-    bottom: 100%;
-}
+  .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    /* Color al clickear el nav bar */
+  .open .dropdown-toggle {
+        color: white !important;
+        background-color: #2d2d30 !important;
+    }
+
+  .dropdown-menu li a {
+        color:white !important;
+    }
+  .dropdown-menu li a:hover {
+        background-color: black !important;
+    }
+    .dropdown-menu{
+      background-color: #2d2d30;
+      opacity: 1.1;
+    }
+  .carousel-caption form {
+      right: 20%;
+      left: 5%;
+      padding-bottom: 3%;
+  }

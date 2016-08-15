@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <title>Registro-TicoRide</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Perfiles-TicoRide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="configRegistro.css">
+  <link rel="stylesheet" href="configperfil.css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -23,6 +23,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
+
         <img src="log.png">
         <h5>Tico-Rides</h5>
 
@@ -31,21 +33,20 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Accesar
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><input class="form-control" type="text" placeholder="Email"></a></li>
-            <li><a href="#"><input class="form-control" type="password" placeholder="Pass"></a></li>
-            <li><a href="#"><button class="btn btn-default">Entrar</button></a></li>
+            <a href="AgregarRide-Uber.html">Agregar</a>
+            <br></br>
+            <a href="Editarride-Uber.html">Editar</a>
           </ul>
         </li>
 
-        <li><a href="Tico-Ride.html">Principal</a></li>
-  </ul>
+        <li><a href="configuracion.html">Configuracion</a></li>
+      </ul>
     </div>
   </div>
 </nav>
-
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -55,7 +56,6 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -63,11 +63,6 @@
 
       <div class="item active">
         <img src="body3.jpg" alt="New York" width="1200" height="700">
-
-      </div>
-
-      <div class="item">
-        <img src="zarcero.jpg" alt="New York" width="1200" height="700">
 
       </div>
 
@@ -88,42 +83,48 @@
 
       <div class="carousel-caption">
 
-        <div class="">
+            <h3>Bienvenido</h3>
 
-          <form class="form-horizontal" role="form">
-            <div class="container">
-    <form role="form">
-      <div class="form-group">
-        <label for="email">Nombre:</label>
-        <br></br>
-        <input type="email" class="" id="email" placeholder="Ej. Glenn Marin Arias">
-      </div>
-      <div class="form-group">
+            <h2>gmarin93</h2>
 
-        <label for="pwd">Telefono:</label>
-        <br></br>
-        <input type="password" class="" id="pwd" placeholder="Ej. 864528">
+        <section>
+           <div class="foto-perfil">
+            <img id="logo-Uber" src="uber-user.png">
+           </div>
 
-      </div>
-      <div class="form-group">
+      </section>
 
-        <label for="pwd">Usuario:</label>
-        <br></br>
-        <input type="" class="" id="pwd" placeholder="Ej. gmarin">
-      </div>
-      <div class="form-group">
+        <div class="container">
 
-        <label for="pwd">Contrasena:</label>
-        <br></br>
-        <input type="password" class="" id="pwd" placeholder="12345">
-      </div>
-      <button type="submit" class="btn btn-default">Crear Usuario</button>
-    </form>
-  </div>
-
-          </form>
-
-
+          <table class="table">
+    <thead>
+      <tr>
+        <th>Conductor</th>
+        <th>Esta en</th>
+        <th>Va para</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+        <td>John</td>
+        <td>Terminal de Buses</td>
+        <td>Universidad Catolica</td>
+        <td><a href="">ver</a></td>
+      </tr>
+      <tr class="">
+        <td>Mary</td>
+        <td>Registro Civil</td>
+        <td>Coocique</td>
+        <td><a href="">ver</a></td>
+      </tr>
+      <tr class="">
+        <td>July</td>
+        <td>Pizza Hut</td>
+        <td>UTN</td>
+        <td><a href="">ver</a></td>
+      </tr>
+    </tbody>
+  </table>
         </div>
 
 
@@ -189,7 +190,7 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (900) specifies the number of milliseconds it takes to schtroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){

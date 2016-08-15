@@ -1,20 +1,21 @@
 .Bienvenida {
-    text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
+
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 113%;
-    right: 28%;
+		position: absolute;
+    top: -7%;
+    right: 31%;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
     0%   {color: white;}
-    25%  {color: gray;}
+    25%  {color: darkgray;}
     50%  {color: darkgray;}
     100% {color: black;}
 }
@@ -22,7 +23,7 @@
 /* Standard syntax */
 @keyframes example {
     0%   {color: white;}
-    25%  {color: gray;}
+    25%  {color: darkgray;}
     50%  {color: darkgray;}
     100% {color: black;}
 }
@@ -42,8 +43,10 @@ h5{
   right: 10%;
 }
 input{
-  border-radius: 4px;
+  border-radius: 10%;
+	width: 25%;
 	color:black;
+	font-style: italic;
 
 }
 .container {
@@ -145,6 +148,12 @@ input{
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
   }
+
+	.dropdown-menu{
+		background-color: #2d2d30;
+		opacity: 1.9;
+	}
+
 .navbar {
       margin-bottom: 0;
       background-color: #2d2d30;
@@ -156,10 +165,10 @@ input{
 .navbar li a, .navbar .navbar-brand {
       color: lightgreen !important;
   }
+	/*cambia el color al tocar el texto*/
 .navbar-nav li a:hover {
       color: white !important;
   }
-
 .navbar-nav li.active a {
       color: lightgreen !important;
       background-color: #29292c !important;
@@ -174,17 +183,15 @@ input{
 .dropdown-menu li a {
       color:black;
   }
+
+	/*Seleccion color */
 .dropdown-menu li a:hover {
       background-color: #2d2d30;
   }
+  .carousel-caption form {
+      right: 15%;
+      left: 15%;
+      padding-bottom: 3%;
+			bottom:-17%;
 
-	.dropdown-menu{
-		background-color: #2d2d30;
-		opacity: 1.9;
-	}
-	.carousel-caption form {
-    position: absolute;
-    right: -12%;
-    left: 16%;
-    bottom: 100%;
-}
+  }
