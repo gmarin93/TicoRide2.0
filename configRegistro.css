@@ -12,6 +12,8 @@
     right: 31%;
 }
 
+
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
     0%   {color: white;}
@@ -49,6 +51,7 @@ input{
 	font-style: italic;
 
 }
+
 .container {
       padding: 80px 9px;
   }
@@ -188,10 +191,17 @@ input{
 .dropdown-menu li a:hover {
       background-color: #2d2d30;
   }
-  .carousel-caption form {
-      right: 15%;
-      left: 15%;
-      padding-bottom: 3%;
-			bottom:-17%;
+.carousel-caption form {
+		right: -20%;
+		bottom: 327%;
+		position: absolute;
+		width: 106%;
+}
 
   }
+button{
+
+bottom: 9%;
+position: absolute;
+right: 20%;
+}

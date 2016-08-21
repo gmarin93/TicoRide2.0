@@ -11,6 +11,7 @@
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <script src="Logica.js"></script>
 
   </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -36,9 +37,9 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <a href="AgregarRide-Uber.html">Agregar</a>
+            <a href="AgregarRides.html">Agregar</a>
             <br></br>
-            <a href="Editarride-Uber.html">Editar</a>
+            <a href="EditarRides.html">Editar</a>
           </ul>
         </li>
 
@@ -56,6 +57,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -63,6 +65,11 @@
 
       <div class="item active">
         <img src="body3.jpg" alt="New York" width="1200" height="700">
+
+      </div>
+
+      <div class="item">
+        <img src="zarcero.jpg" alt="New York" width="1200" height="700">
 
       </div>
 
@@ -85,7 +92,7 @@
 
             <h3>Bienvenido</h3>
 
-            <h2>gmarin93</h2>
+            <h2 id="user1">gmarin93</h2>
 
         <section>
            <div class="foto-perfil">
@@ -109,19 +116,19 @@
         <td>John</td>
         <td>Terminal de Buses</td>
         <td>Universidad Catolica</td>
-        <td><a href="">ver</a></td>
+        <td><a onclick="mostrarUser()">ver</a></td>
       </tr>
       <tr class="">
         <td>Mary</td>
         <td>Registro Civil</td>
         <td>Coocique</td>
-        <td><a href="">ver</a></td>
+        <td><a onclick="mostrarUser()">ver</a></td>
       </tr>
       <tr class="">
         <td>July</td>
         <td>Pizza Hut</td>
         <td>UTN</td>
-        <td><a href="">ver</a></td>
+        <td><a onclick="mostrarUser()">ver</a></td>
       </tr>
     </tbody>
   </table>

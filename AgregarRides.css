@@ -1,14 +1,55 @@
 .Bienvenida {
-    text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
+
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+
+}
+
+.acerca{
+
+    right: -185%;
     position: absolute;
-    bottom: 113%;
-    right: 28%;
+    bottom: 19%;
+
+}
+.cancelar{
+
+    position: absolute;
+    left: 157%;
+		background-color: #2d2d30;
+		color: black;
+}
+
+.guardar{
+
+		background-color: #2d2d30;
+		color:black;
+    position: absolute;
+    right: -19%;
+
+}
+.nombre{
+	position: absolute;
+	bottom: 905%;
+	right: 42%;
+}
+.velocidad {
+    position: absolute;
+    bottom: 69%;
+    right: -1%;
+}
+.table {
+    width: 128%;
+    max-width: 133%;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 2%;
+    top: -88%;
 }
 
 /* Chrome, Safari, Opera */
@@ -27,13 +68,10 @@
     100% {color: black;}
 }
 
-
-
 img{
 
   margin-right:80%;
   width:50%;
-	max-width:100%;
 }
 
 h5{
@@ -42,15 +80,33 @@ h5{
   margin-top:-9%;
   right: 10%;
 }
+
+.cancelar {
+    position: absolute;
+    left: 73%;
+    background-color: #2d2d30;
+    color: black;
+    bottom: 134%;
+}
+
+.guardar{
+
+		background-color: #2d2d30;
+		color:black;
+    position: absolute;
+    right: 42%;
+    bottom: 140%;
+}
+
+
 input{
   border-radius: 4px;
-	color:black;
 
 }
 .container {
       padding: 80px 9px;
   }
-  .person {
+.person {
       border: 10px solid transparent;
       margin-bottom: 25px;
       width: 80%;
@@ -68,7 +124,28 @@ input{
 }
 .carousel-caption h3 {
       color: #fff !important;
+			font-size: 51px;
+    	position: absolute;
+    	left: 53%;
+    	top: -209%;
   }
+
+
+.carousel-caption img {
+	    width: 7%;
+	    position: absolute;
+	    left: 1%;
+	    bottom: 2000%;
+}
+
+.carousel-caption h2 {
+    width: 49%;
+    font-size: 150%;
+    position: absolute;
+    left: -10%;
+    bottom: 2050%;
+}
+
 
 .carousel-caption {
       right: 26%;
@@ -110,23 +187,80 @@ input{
       color: #555;
   }
 
-  .botonimagen{
+
+.btnimagen{
+
   background-image:url(gmaps.png);
   color:transparent;
   border-radius:15%;
+  bottom: 1490%;
+  position: absolute;
+  left: 59%;
 }
+
+.btnimagen2{
+
+  background-image:url(gmaps.png);
+  color:transparent;
+  border-radius:15%;
+  bottom: 1107%;
+  position: absolute;
+  left: 59%;
+}
+
+.inicial {
+    bottom: -95%;
+    position: absolute;
+}
+
+.dias{
+  position: absolute;
+  font-family: monospace;
+  top: -80%;
+  left: 29%;
+}
+
+.salida{
+    position: absolute;
+    bottom: -94%;
+    right: -172%;
+}
+
+.botonimagen2{
+  background-image:url(gmaps.png);
+  color:transparent;
+  border-radius:15%;
+  bottom: 106%;
+  position: absolute;
+  left: 102%;
+}
+
+.btn1 {
+    bottom: 106%;
+    position: absolute;
+    left: 102%;
+}
+
+.btn2{
+
+    bottom: 35%;
+    position: absolute;
+    left: 101%;
+
+}
+
 .btn {
-      padding: 10px 20px;
+      /*padding: 10px 20px;*/
       background-color: #333;
       color: #f1f1f1;
       border-radius: 0;
       transition: .2s;
 
-  }
+}
 .btn:hover, .btn:focus {
-    /*  border: 1px solid #333;*/
+      border: 1px solid lightgreen;
       background-color: #2d2d30;
-      color: white;
+      color: black;
   }
 .modal-header, h4, .close {
       background-color: #333;
@@ -152,40 +286,46 @@ input{
       border: 0;
       font-size: 16px !important;
       letter-spacing: 4px;
-      opacity: 0.9;
+      opacity: 1.1;
   }
 .navbar li a, .navbar .navbar-brand {
       color: lightgreen !important;
   }
 .navbar-nav li a:hover {
       color: white !important;
+			background-color: #2d2d30 !important;
+			border-color: transparent;
   }
-
 .navbar-nav li.active a {
-      color: lightgreen !important;
-      background-color: #29292c !important;
+      color: red !important;
+      background-color: lightgreen !important;
   }
-.navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-.open .dropdown-toggle {
-      color: black;
-      background-color: #2d2d30 !important;
-  }
-.dropdown-menu li a {
-      color:black;
-  }
-.dropdown-menu li a:hover {
-      background-color: #2d2d30;
+.navbar li a, .navbar .navbar-brand {
+        color: lightgreen !important;
   }
 
-	.dropdown-menu{
-		background-color: #2d2d30;
-		opacity: 1.9;
-	}
-	.carousel-caption form {
-    position: absolute;
-    right: -12%;
-    left: 16%;
-    bottom: 100%;
-}
+.navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    /* Color al clickear el nav bar */
+.open .dropdown-toggle {
+        color: white !important;
+        background-color: #2d2d30 !important;
+    }
+
+.dropdown-menu li a {
+        color:white !important;
+    }
+.dropdown-menu li a:hover {
+        background-color: black !important;
+    }
+.dropdown-menu{
+      background-color: #2d2d30;
+      opacity: 1.1;
+    }
+.carousel-caption form {
+      right: 20%;
+      left: 5%;
+      padding-bottom: 3%;
+  }

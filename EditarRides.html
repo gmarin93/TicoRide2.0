@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Configuracion-TicoRide</title>
+  <title>EditarRide-TicoRide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="configuracion-config.css">
+  <link rel="stylesheet" href="AgregarRides.css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -34,12 +34,14 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li><a href="Perfil.html">Perfil</a></li>
+        <li><a href="configuracion.html">Configuracion</a></li>
 
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <a href="AgregarRide-Uber.html">Agregar</a>
+
             <br></br>
             <a href="Editarride-Uber.html">Editar</a>
           </ul>
@@ -113,6 +115,26 @@
                   <br></br>
 
                </div>
+
+               <div class="inicial">
+
+                  <label for="driver-name">Hora inicial:</label>
+                  <br></br>
+                  <input type=" text" name="driver-name" value="" placeholder="4:00pm"> <br/>
+                  <br></br>
+
+               </div>
+
+               <div class="salida">
+
+                  <label for="driver-name">Hora Salida:</label>
+                  <br></br>
+                  <input type=" text" name="driver-name" value="" placeholder="6:00pm"> <br/>
+                  <br></br>
+
+               </div>
+
+
                <div class="acerca">
 
                 <label for="address">Acerca de mi:</label>
@@ -121,15 +143,51 @@
                  <br><br/>
                </div>
 
-               <div class="guardar">
-                     <button class="btn" type="button" name="button">Guardar</button>
-                   </div>
-                       <div class="cancelar">
-                     <button class="btn" type="button" name="button">Cancelar</button>
-                   </div>
+               <div class="dias">
 
+
+                           <div class="container">
+
+                             <div>
+                               Lunes <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Martes <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Miercoles <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Jueves <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Viernes <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Sabado <input type="checkbox" name="" value=""><br/>
+                             </div>
+                             <div>
+                               Domingo <input type="checkbox" name="" value=""><br/>
+                             </div>
+
+
+                           </div>
+
+               </div>
 
             </div>
+
+            <button onclick="inicialize()" class="btnimagen" type="submit" >B</button>
+
+            <button onclick="inicialize()" class="btnimagen2" type="submit" >B</button>
+
+            <div class="guardar">
+                  <button class="btn" type="button" name="button">Guardar</button>
+                </div>
+                    <div class="cancelar">
+                  <button class="btn" type="button" name="button">Cancelar</button>
+                </div>
+         </div>
 
       </section>
 

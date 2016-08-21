@@ -10,6 +10,14 @@
 
 }
 
+.dias{
+
+
+    position: absolute;
+    font-family: monospace;
+
+}
+
 .acerca{
 
     right: -185%;
@@ -219,6 +227,8 @@ input{
   }
 .navbar-nav li a:hover {
       color: white !important;
+			background-color: #2d2d30 !important;
+			border-color: transparent;
   }
 .navbar-nav li.active a {
       color: red !important;
@@ -227,10 +237,6 @@ input{
 .navbar li a, .navbar .navbar-brand {
         color: lightgreen !important;
   }
-.navbar-nav li a:hover {
-        color: white;
-        background-color: #2d2d30 !important;
-    }
 
 .navbar-default .navbar-toggle {
         border-color: transparent;
