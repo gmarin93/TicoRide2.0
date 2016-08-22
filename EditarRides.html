@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>AgregarRide-TicoRide</title>
+  <title>EditarRide-TicoRide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="AgregarRides.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
 
 
@@ -100,17 +103,26 @@
 
     <div class="nombre">
 
-       <label for="driver-name">Nombre:</label>
+       <label for="driver-name">Nombre Ride:</label>
        <br></br>
-       <input id="nombreD" type=" text" name="driver-name" value="" placeholder="km/h" required> <br/>
+       <input id="nombreD" type=" text" name="driver-name" value="" placeholder="A la U" required> <br/>
        <br></br>
      </div>
 
        <div class="velocidad">
 
-          <label  for="driver-name">Velocidad:</label>
+          <label  for="driver-name">Esta en:</label>
           <br></br>
-          <input id="velocidadD" type=" text" name="driver-name" value="" placeholder="Glenn Marin" required> <br/>
+          <input id="estoy" type=" text" name="driver-name" value="" placeholder="Pital" required> <br/>
+          <br></br>
+
+       </div>
+
+       <div class="velocidad2">
+
+          <label  for="driver-name">A donde va:</label>
+          <br></br>
+          <input id="voypara" type=" text" name="driver-name" value="" placeholder="San Jose" required> <br/>
           <br></br>
 
        </div>
@@ -136,37 +148,35 @@
 
        <div class="acerca">
 
-        <label for="address">Acerca de mi:</label>
+        <label for="address">Descripcion:</label>
         <br></br>
          <textarea id="infoD" name="address" rows="4" cols="25" required></textarea>
          <br><br/>
        </div>
 
        <div class="dias">
-
-
-                   <div class="">
+           <div class="">
 
                      <div>
-                       Lunes <input type="checkbox" name="" value="" required><br/>
+                       Lunes <input id="lunes" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Martes <input type="checkbox" name="" value="" required><br/>
+                       Martes <input id="martes" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Miercoles <input type="checkbox" name="" value="" required><br/>
+                       Miercoles <input id="miercoles" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Jueves <input type="checkbox" name="" value="" required><br/>
+                       Jueves <input id="jueves" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Viernes <input type="checkbox" name="" value="" required><br/>
+                       Viernes <input id="viernes" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Sabado <input type="checkbox" name="" value="" required><br/>
+                       Sabado <input id="sabado" type="checkbox" name="" value="" required><br/>
                      </div>
                      <div>
-                       Domingo <input type="checkbox" name="" value="" required><br/>
+                       Domingo <input id="domingo" type="checkbox" name="" value="" required><br/>
                      </div>
 
 
@@ -201,4 +211,5 @@
 
 <script src="Logica.js" charset="utf-8"></script>
 </body>
+
 </html>

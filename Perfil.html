@@ -2,50 +2,56 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Perfiles-TicoRide</title>
+  <title>Perfil-TicoRide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="configperfil.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
 
 
   </head>
-<body id="myPage" data-spy="scroll" onload="acces()" data-target=".navbar" data-offset="50">
+  <body id="myPage" data-spy="scroll" onload="acces()" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
 
-        <img src="log.png">
-        <h5>Tico-Rides</h5>
+          <img src="log.png">
+          <h5>Tico-Rides</h5>
 
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+
+
+          <li><a href="configuracion.html">Configuracion</a></li>
+          <li><a onclick="salir()" href="Tico-Ride.html">Salir</a></li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <a href="AgregarRides.html">Agregar</a>
+
+              <br></br>
+              <a href="EditarRides.html">Editar</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+  </nav>
 
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <a href="AgregarRides.html">Agregar</a>
-            <br></br>
-            <a href="EditarRides.html">Editar</a>
-          </ul>
-        </li>
-
-        <li><a href="configuracion.html">Configuracion</a></li>
-        <li><a onclick="salir()" href="Tico-Ride.html">Salir</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
