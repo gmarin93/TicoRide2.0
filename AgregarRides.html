@@ -11,10 +11,10 @@
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
-  <script src="Logica.js"></script>
+
 
   </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" onload="acces()" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -99,95 +99,107 @@
 
             <img id="logo-Uber" src="uber-user.png">
 
+  <form id="datos">
 
-            <div class="nombre">
+    <div class="nombre">
 
-               <label for="driver-name">Nombre:</label>
-               <br></br>
-               <input type=" text" name="driver-name" value="" placeholder="km/h"> <br/>
-               <br></br>
+       <label for="driver-name">Nombre Ride:</label>
+       <br></br>
+       <input id="nombreD" type=" text" name="driver-name" value="" placeholder="A la U" required> <br/>
+       <br></br>
+     </div>
 
-               <div class="velocidad">
+       <div class="velocidad">
 
-                  <label for="driver-name">Velocidad:</label>
-                  <br></br>
-                  <input type=" text" name="driver-name" value="" placeholder="Glenn Marin"> <br/>
-                  <br></br>
+          <label  for="driver-name">Esta en:</label>
+          <br></br>
+          <input id="estoy" type=" text" name="driver-name" value="" placeholder="Pital" required> <br/>
+          <br></br>
 
-               </div>
+       </div>
 
-               <div class="inicial">
+       <div class="velocidad2">
 
-                  <label for="driver-name">Hora inicial:</label>
-                  <br></br>
-                  <input type=" text" name="driver-name" value="" placeholder="4:00pm"> <br/>
-                  <br></br>
+          <label  for="driver-name">A donde va:</label>
+          <br></br>
+          <input id="voypara" type=" text" name="driver-name" value="" placeholder="San Jose" required> <br/>
+          <br></br>
 
-               </div>
+       </div>
 
-               <div class="salida">
+       <div class="inicial">
 
-                  <label for="driver-name">Hora Salida:</label>
-                  <br></br>
-                  <input type=" text" name="driver-name" value="" placeholder="6:00pm"> <br/>
-                  <br></br>
+          <label for="driver-name">Hora inicial:</label>
+          <br></br>
+          <input id="horainD" type=" text" name="driver-name" value="" placeholder="4:00pm" required> <br/>
+          <br></br>
 
-               </div>
+       </div>
 
+       <div class="salida">
 
-               <div class="acerca">
+          <label for="driver-name">Hora Salida:</label>
+          <br></br>
+          <input id="horafinD" type=" text" name="driver-name" value="" placeholder="6:00pm" required> <br/>
+          <br></br>
 
-                <label for="address">Acerca de mi:</label>
-                <br></br>
-                 <textarea name="address" rows="4" cols="25"></textarea>
-                 <br><br/>
-               </div>
-
-               <div class="dias">
-
-
-                           <div class="container">
-
-                             <div>
-                               Lunes <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Martes <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Miercoles <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Jueves <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Viernes <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Sabado <input type="checkbox" name="" value=""><br/>
-                             </div>
-                             <div>
-                               Domingo <input type="checkbox" name="" value=""><br/>
-                             </div>
+       </div>
 
 
-                           </div>
+       <div class="acerca">
 
-               </div>
+        <label for="address">Descripcion:</label>
+        <br></br>
+         <textarea id="infoD" name="address" rows="4" cols="25" required></textarea>
+         <br><br/>
+       </div>
 
-            </div>
+       <div class="dias">
+           <div class="">
 
-            <button onclick="inicialize()" class="btnimagen" type="submit" >B</button>
+                     <div>
+                       Lunes <input id="lunes" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Martes <input id="martes" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Miercoles <input id="miercoles" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Jueves <input id="jueves" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Viernes <input id="viernes" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Sabado <input id="sabado" type="checkbox" name="" value="" required><br/>
+                     </div>
+                     <div>
+                       Domingo <input id="domingo" type="checkbox" name="" value="" required><br/>
+                     </div>
 
-            <button onclick="inicialize()" class="btnimagen2" type="submit" >B</button>
 
-            <div class="guardar">
-                  <button class="btn" type="button" name="button">Guardar</button>
-                </div>
-                    <div class="cancelar">
-                  <button class="btn" type="button" name="button">Cancelar</button>
-                </div>
-         </div>
+                   </div>
+
+       </div>
+
+
+
+    <button onclick="inicialize()" class="btnimagen" type="submit" >B</button>
+
+    <button onclick="inicialize()" class="btnimagen2" type="submit" >B</button>
+
+    <div class="guardar">
+          <button onclick="agregarRide()" class="btn" type="button" name="button">Guardar</button>
+        </div>
+            <div class="cancelar">
+          <button class="btn" type="button" name="button">Cancelar</button>
+        </div>
+ </div>
+
+
+  </form>
 
       </section>
 
@@ -197,5 +209,7 @@
 
 </div>
 
+<script src="Logica.js" charset="utf-8"></script>
 </body>
+
 </html>

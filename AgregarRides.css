@@ -10,39 +10,42 @@
 
 }
 
-.acerca{
-
-    right: -185%;
+.acerca {
+    right: 25%;
     position: absolute;
-    bottom: 19%;
-
-}
-.cancelar{
-
-    position: absolute;
-    left: 157%;
-		background-color: #2d2d30;
-		color: black;
+    bottom: 283%;
 }
 
-.guardar{
-
-		background-color: #2d2d30;
-		color:black;
+.cancelar {
     position: absolute;
-    right: -19%;
-
+    left: 109%;
+    background-color: #2d2d30;
+    color: black;
+    bottom: 412%;
 }
-.nombre{
-	position: absolute;
-	bottom: 905%;
-	right: 42%;
+.guardar {
+    background-color: #2d2d30;
+    color: black;
+    position: absolute;
+    right: -4%;
+    bottom: 411%;
+}
+.nombre {
+    position: absolute;
+    bottom: 1393%;
+    right: 68%;
 }
 .velocidad {
     position: absolute;
-    bottom: 69%;
-    right: -1%;
+    bottom: 1393%;
+    right: 27%;
 }
+.velocidad2 {
+    position: absolute;
+    bottom: 923%;
+    right: 27%;
+}
+
 .table {
     width: 128%;
     max-width: 133%;
@@ -131,19 +134,19 @@ input{
   }
 
 
-.carousel-caption img {
+	.carousel-caption img {
 	    width: 7%;
 	    position: absolute;
-	    left: 1%;
-	    bottom: 2000%;
-}
+	    left: -2%;
+	    bottom: 2286%;
+	}
 
 .carousel-caption h2 {
     width: 49%;
     font-size: 150%;
     position: absolute;
-    left: -10%;
-    bottom: 2050%;
+    left: -14%;
+    bottom: 2254%;
 }
 
 
@@ -188,44 +191,46 @@ input{
   }
 
 
-.btnimagen{
+	.btnimagen {
+	    background-image: url(gmaps.png);
+	    color: transparent;
+	    border-radius: 15%;
+	    bottom: 1584%;
+	    position: absolute;
+	    left: 73%;
+	}
 
-  background-image:url(gmaps.png);
-  color:transparent;
-  border-radius:15%;
-  bottom: 1490%;
-  position: absolute;
-  left: 59%;
-}
-
-.btnimagen2{
-
-  background-image:url(gmaps.png);
-  color:transparent;
-  border-radius:15%;
-  bottom: 1107%;
-  position: absolute;
-  left: 59%;
-}
+	.btnimagen2 {
+	    background-image: url(gmaps.png);
+	    color: transparent;
+	    border-radius: 15%;
+	    bottom: 1108%;
+	    position: absolute;
+	    left: 73%;
+	}
 
 .inicial {
-    bottom: -95%;
+    bottom: 265%;
     position: absolute;
+    right: 68%;
 }
-
-.dias{
-  position: absolute;
-  font-family: monospace;
-  top: -80%;
-  left: 29%;
-}
-
-.salida{
+.dias {
     position: absolute;
-    bottom: -94%;
-    right: -172%;
+    font-family: monospace;
+    bottom: 931%;
+    left: 88%;
 }
 
+textarea{
+
+	color:black;
+}
+
+.salida {
+    position: absolute;
+    bottom: 818%;
+    right: 68%;
+}
 .botonimagen2{
   background-image:url(gmaps.png);
   color:transparent;
@@ -324,8 +329,7 @@ input{
       background-color: #2d2d30;
       opacity: 1.1;
     }
-.carousel-caption form {
-      right: 20%;
-      left: 5%;
-      padding-bottom: 3%;
-  }
+input{
+
+	color:black;
+}
